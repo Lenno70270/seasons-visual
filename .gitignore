@@ -1,0 +1,7 @@
+.gradle/
+build/
+run/
+.idea/
+dist/
+# Fremde Jars nur zum Kompilieren, siehe README
+libs/*.jar

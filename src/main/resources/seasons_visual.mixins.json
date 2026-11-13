@@ -1,0 +1,20 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "de.lennard.seasons.mixin",
+	"plugin": "de.lennard.seasons.mixin.SeasonsMixinPlugin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"BiomeColorsMixin",
+		"BlockColorsMixin",
+		"SectionCompilerMixin",
+		"SodiumMeshingMixin",
+		"SpriteContentsAccessor",
+		"TextureAtlasAccessor",
+		"TextureAtlasMixin",
+		"TextureAtlasSpriteAccessor"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
