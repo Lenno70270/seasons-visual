@@ -46,7 +46,7 @@ public class SeasonsClientTest implements FabricClientGameTest {
 			ctx.getInput().pressKey(GLFW.GLFW_KEY_J);
 			ctx.waitForScreen(SeasonScreen.class);
 			ctx.takeScreenshot("menu" + suffix);
-			ctx.clickScreenButton("Herbst");
+			ctx.clickScreenButton("seasons_visual.season.autumn");
 			ctx.waitFor(mc -> mc.gui.screen() == null);
 			check(SeasonsVisual.season() == Season.AUTUMN, "Button stellt Herbst ein");
 			settle(ctx, connection);

@@ -3,5 +3,5 @@ build/
 run/
 .idea/
 dist/
-# Fremde Jars nur zum Kompilieren, siehe README
+# Third-party jars, only needed to compile (see README)
 libs/*.jar

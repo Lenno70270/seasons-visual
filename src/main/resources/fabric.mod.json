@@ -3,7 +3,7 @@
 	"id": "seasons_visual",
 	"version": "${version}",
 	"name": "Seasons Visual",
-	"description": "Rein visuelle Jahreszeiten, nur für dich sichtbar. Der Server braucht die Mod nicht.",
+	"description": "Purely visual seasons that only you can see. The server does not need the mod.",
 	"authors": ["Lennard"],
 	"license": "MIT",
 	"environment": "client",

@@ -10,7 +10,7 @@ final class SeasonScreen extends Screen {
 	private static final int GAP = 4;
 
 	SeasonScreen() {
-		super(Component.literal("Jahreszeit"));
+		super(Component.translatable("seasons_visual.screen.title"));
 	}
 
 	@Override
@@ -22,8 +22,8 @@ final class SeasonScreen extends Screen {
 			Season season = seasons[i];
 			int x = left + (i % 2) * (BUTTON_WIDTH + GAP);
 			int y = top + (i / 2) * (BUTTON_HEIGHT + GAP);
-			String label = season == SeasonsVisual.season() ? "» " + season.label + " «" : season.label;
-			addRenderableWidget(Button.builder(Component.literal(label), button -> {
+			Component label = season == SeasonsVisual.season() ? Component.translatable("seasons_visual.season.selected", season.label()) : season.label();
+			addRenderableWidget(Button.builder(label, button -> {
 				SeasonsVisual.setSeason(season);
 				onClose();
 			}).bounds(x, y, BUTTON_WIDTH, BUTTON_HEIGHT).build());
@@ -41,11 +41,12 @@ final class SeasonScreen extends Screen {
 	}
 
 	private static Component waterLabel() {
-		return Component.literal("Eisiges Wasser: " + (SeasonsVisual.icyWater() ? "An" : "Aus"));
+		return Component.translatable("seasons_visual.option.icy_water",
+				Component.translatable(SeasonsVisual.icyWater() ? "seasons_visual.option.on" : "seasons_visual.option.off"));
 	}
 
 	private static Component particleLabel() {
-		return Component.literal("Partikel: " + SeasonsVisual.particles().label);
+		return Component.translatable("seasons_visual.option.particles", Component.translatable(SeasonsVisual.particles().key));
 	}
 
 	@Override

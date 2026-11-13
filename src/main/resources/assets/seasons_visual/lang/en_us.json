@@ -1,4 +1,18 @@
 {
 	"key.category.seasons_visual.main": "Seasons Visual",
-	"key.seasons_visual.open": "Jahreszeiten-Menü öffnen"
+	"key.seasons_visual.open": "Open seasons menu",
+	"seasons_visual.screen.title": "Season",
+	"seasons_visual.season.spring": "Spring",
+	"seasons_visual.season.summer": "Summer",
+	"seasons_visual.season.autumn": "Autumn",
+	"seasons_visual.season.winter": "Winter",
+	"seasons_visual.season.selected": "» %s «",
+	"seasons_visual.option.icy_water": "Icy water: %s",
+	"seasons_visual.option.particles": "Particles: %s",
+	"seasons_visual.option.on": "On",
+	"seasons_visual.option.off": "Off",
+	"seasons_visual.particles.normal": "Normal",
+	"seasons_visual.particles.low": "Few",
+	"seasons_visual.particles.off": "Off",
+	"modmenu.descriptionTranslation.seasons_visual": "Purely visual seasons that only you can see. The server does not need the mod."
 }
